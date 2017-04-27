@@ -53,11 +53,15 @@
                                 <button type="submit" class="btn btn-primary">
                                     Login
                                 </button>
-                                <a href="redirect">FB Login</a>
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                     Forgot Your Password?
                                 </a>
                             </div>
+                        </div>
+                        <hr>
+                        <div class="form-group text-center">
+                            <a href="{{ url('loginFacebook') }}" class="btn btn-success">Facebook Login</a>
+                            <a href="{{ url('loginGithub') }}" class="btn btn-success">Git Login</a>
                         </div>
                     </form>
                 </div>

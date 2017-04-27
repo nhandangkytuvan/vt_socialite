@@ -42,6 +42,6 @@ return [
     'facebook' => [
         'client_id' => '440646552934910',
         'client_secret' => 'bb0e25f8ffa92e5d02dffe82eec4082c',
-        'redirect' => 'http://localhost/vt_socialite/callback',
+        'redirect' => 'http://localhost/vt_socialite/loginCallbackFacebook',
     ],
 ];

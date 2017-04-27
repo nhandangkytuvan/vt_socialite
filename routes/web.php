@@ -11,13 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('auth/github', 'Auth\AuthController@redirectToProvider');
-Route::get('auth/github/callback', 'Auth\AuthController@handleProviderCallback');
+Route::get('/', function () {return view('welcome');});
 Auth::routes();
-
 Route::get('/home', 'HomeController@index');
-Route::get('/redirect', 'SocialAuthController@redirect');
-Route::get('/callback', 'SocialAuthController@callback');
+Route::get('/loginFacebook', 'SocialAuthController@loginFacebook');
+Route::get('/loginCallbackFacebook', 'SocialAuthController@loginCallbackFacebook');
+Route::get('/loginGithub', 'SocialAuthController@loginGithub');
+Route::get('/loginCallbackGithub', 'SocialAuthController@loginCallbackGithub');
